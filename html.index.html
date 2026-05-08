@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.ignoreyou.com</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #240046, #5a189a, #9d4edd);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            animation: pop 1s ease;
+            z-index: 2;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid white;
+            box-shadow: 0 0 40px yellow;
+            animation: bounce 2s infinite alternate;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin-top: 20px;
+            text-shadow: 0 0 20px black;
+        }
+
+        p {
+            font-size: 35px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .success {
+            color: #00ff66;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        .emoji {
+            position: absolute;
+            font-size: 40px;
+            bottom: -50px;
+            animation: float 6s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0px); }
+            to { transform: translateY(-25px); }
+        }
+
+        @keyframes pop {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Animated Emojis -->
+    <div class="emoji" style="left:5%; animation-delay:0s;">😂</div>
+    <div class="emoji" style="left:15%; animation-delay:1s;">🤣</div>
+    <div class="emoji" style="left:30%; animation-delay:2s;">😎</div>
+    <div class="emoji" style="left:45%; animation-delay:3s;">💀</div>
+    <div class="emoji" style="left:60%; animation-delay:4s;">🔥</div>
+    <div class="emoji" style="left:75%; animation-delay:1.5s;">🙈</div>
+    <div class="emoji" style="left:90%; animation-delay:2.5s;">🤣</div>
+
+    <div class="container">
+        <!-- Your specific image file -->
+        <img src="WhatsApp Image 2026-05-09 at 12.45.51 AM.jpeg" alt="Ishtiaq">
+
+        <h1>OOPS! 😭</h1>
+
+        <p>
+            Ishtiaq Ahmad Khan ignored your message
+        </p>
+
+        <div class="success">
+            successfully ✅
+        </div>
+    </div>
+
+</body>
+</html>
